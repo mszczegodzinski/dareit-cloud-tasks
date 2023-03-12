@@ -15,3 +15,7 @@ Create a unique bucket with a basic, static website and make it public. Created 
 ### task_3 and task_3_optional:
 
 Add cloud function url and hello_function script
+
+### task_4:
+
+Create a VM, install apache server, and host index.html file
