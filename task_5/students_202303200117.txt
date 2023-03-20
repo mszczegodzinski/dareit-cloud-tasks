@@ -1,0 +1,8 @@
+|id |lastname      |firstname|email                  |city   |age|
+|---|--------------|---------|-----------------------|-------|---|
+|0  |Szczegodzinski|Marek    |updatedemail@gmail.com |Warsaw |33 |
+|1  |Nowak         |Marek    |nowak@gmail.com        |Cracow |20 |
+|2  |Kowalski      |Jan      |jankowalski@gmail.com  |Wroclaw|25 |
+|3  |Kowalska      |Anna     |kowalaskaanna@gmail.com|Gdansk |28 |
+|4  |Kowalczyk     |Anna     |kowalczyka@gmail.com   |Poznan |40 |
+|5  |Kowalczyk     |Marian   |mariank@gmail.com      |Lodz   |42 |
