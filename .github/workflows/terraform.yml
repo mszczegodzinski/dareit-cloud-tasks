@@ -38,9 +38,7 @@ jobs:
 
       # Run terraform fmt to check whether the formatting of the files is correct
       - name: Terraform Format
-        run: |
-          cd task_8
-          terraform fmt -check
+        run: terraform fmt -check
 
       # Run terraform plan
       - name: Terraform Plan
