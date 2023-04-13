@@ -26,26 +26,36 @@ jobs:
 
       # Install the latest version of Terraform CLI
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
+        uses: |
+          cd task_8
+          hashicorp/setup-terraform@v1
 
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       - name: Terraform Init
-        run: terraform init
+        run: |
+          cd task_8
+          terraform init
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.TF_GOOGLE_CREDENTIALS }}
 
       # Run terraform fmt to check whether the formatting of the files is correct
       - name: Terraform Format
-        run: terraform fmt -check
+        run: |
+          cd task_8
+          terraform fmt -check
 
       # Run terraform plan
       - name: Terraform Plan
-        run: terraform plan
+        run: |
+          cd task_8
+          terraform plan
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.TF_GOOGLE_CREDENTIALS }}
 
       # Run terraform apply
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: |
+          cd task_8
+          terraform apply -auto-approve
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.TF_GOOGLE_CREDENTIALS }}
