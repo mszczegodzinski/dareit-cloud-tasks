@@ -20,6 +20,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      # Change to the task_8 directory
+      - name: Change to task_8 directory
+        run: cd task_8
+
       # Install the latest version of Terraform CLI
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
